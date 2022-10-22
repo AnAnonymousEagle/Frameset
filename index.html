@@ -1,11 +1,46 @@
-<link rel="icon" href="chinesewriting.jpg" type="image/x-icon" />
+<!DOCTYPE html>
+<html lang="en">
 
-<frameset rows="10%, *, 5%" noresize="noresize" border="none" >
-    <frame src="header.html"></frame>
-    <frameset cols="6%, *">
-        <frame src="menu.html"></frame>
-        <frame src="rick.html" name="BODY"></frame>
-    </frameset>
-    <frame src="footer.html"></frame>
-</frameset>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Addition</title>
+  <link rel="stylesheet" href="AddStyle.css">
+  <link rel="icon" href="logo.png" type="image/x-icon">
+  <script src="AddScript.js" defer></script>
+</head>
 
+<body onload="hideButton()">
+
+  <!-- <div id="overlay" onclick="off()">
+    <div id="text">Overlay Text</div>
+  </div>
+
+  <div style="padding:20px">
+    <h2>Overlay with Text</h2>
+    <button onclick="on()">Turn on overlay effect</button>
+  </div> -->
+
+
+  <div class="contain-all">
+    <div class="header">
+      <h1>Addition</h1>
+      <h3>Type 2 values in the corresponding boxes and click the button to get your result.</h3>
+    </div>
+    <hr>
+    <div class="container">
+      <input type="number" placeholder="1st value" id="firstOperand" oninput="showButton()">
+      <p>+</p>
+      <input type="number" placeholder="2nd value" id="secondOperand" oninput="showButton()">
+      <p>=</p>
+      <input type="number" placeholder="Sum" id="resultSum" oninput="showButton()" readonly>
+    </div>
+    <div class="button-container">
+      <button type="button" onclick="getResult()" id="resultButton">Result</button>
+    </div>
+  </div>
+
+</body>
+
+</html>

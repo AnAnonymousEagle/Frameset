@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap');
+
+
+* {
+  font-family: 'Comfortaa', cursive;
+  transition: .4s;
+}
+
+/* #overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+} */
+
+body {
+  background: linear-gradient(-45deg, #D5B4DA, #D5B4DA, #4A6EB2, #4A6EB2);
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+  height: 97vh;
+  font-family: 'Comfortaa', cursive;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* https://1stwebdesigner.com/15-css-background-effects/ */
+
+
+div.contain-all {
+  background-color: #4A6EB2;
+  width: 50%;
+  height: auto;
+  padding: 30px;
+  margin: 0px auto;
+  border-radius: 25px;
+  border: 15px double #D5B4DA;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+div.header {
+  color: white;
+  height: auto;
+  text-align: center;
+  margin: auto;
+  justify-content: center;
+}
+
+p {
+  font-size: 30px;
+  color: white;
+}
+
+input {
+  padding: 10px;
+  text-align: right;
+}
+
+input[type=number] {
+  box-sizing: border-box;
+  outline: white;
+  border-radius: 25px;
+  border: hidden;
+}
+
+hr {
+  padding: 5px;
+  background-color: white;
+  border: hidden;
+  border-radius: 50px;
+}
+
+#firstOperand:focus {
+  box-sizing: border-box;
+  outline: 5px solid #D5B4DA;
+}
+
+#secondOperand:focus {
+  box-sizing: border-box;
+  outline: 5px solid #D5B4DA;
+}
+
+div.container,
+div.button-container {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  gap: 50px;
+  margin: 25px;
+}
+
+/* color: aqua; */
+
+#resultButton {
+  border-radius: 25px;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  border: 3px solid white;
+  background: linear-gradient(-45deg, #D5B4DA, #D5B4DA, #4A6EB2, #4A6EB2);
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+  transition: 0.3s;
+}
+
+#resultButton:hover:enabled {
+  transform: scale(1.1);
+}
+
+#resultButton:active:enabled {
+  transform: scale(0.9);
+}

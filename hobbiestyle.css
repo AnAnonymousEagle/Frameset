@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f79515;
+}
+
+
+
+.top {
+  width: 100%;
+}
+
+.gametitle {
+  margin-top: 100px;
+  font-size: 36px;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.description {
+  background-color: #080806;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 150px;
+  padding: 15px 50px;
+  color: white;
+  border-radius: 25px;
+}
+
+.parallax-1 {
+  background-image: url(wildrift.jpg);
+
+  /* Set a specific height */
+  min-height: 900px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-2 {
+  background-image: url(roblox.jfif);
+
+  /* Set a specific height */
+  min-height: 900px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-3 {
+  background-image: url(duolingo.jfif);
+
+  /* Set a specific height */
+  min-height: 900px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
