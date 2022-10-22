@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <script>
+      /* 
+	Ivan Angelo S. Cano ICT-12-Diligence 
+	September 6, 2022	
+      */
+
+      function getValue() {
+        let inputVal = document.getElementById("myInput").value;
+        alert(inputVal);
+      }
+    </script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+      * {
+        font-family: "Josefin Sans", sans-serif;
+      }
+
+      body {
+        background: repeating-linear-gradient(45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 100px);
+      }
+
+      button {
+        width: 450px;
+        height: 350px;
+        font-size: 4em;
+        background-color: #ebf5ff;
+        color: #4312ae;
+        border: 2px solid black;
+        box-shadow: 0px 0px 10px #606dbc;
+        transition: 0.7s;
+      }
+
+      button:hover,
+      button:focus,
+      button:active {
+        font-size: 2 1em;
+        background-color: #465298;
+        color: #ebf5ff;
+        border: 2px solid white;
+        cursor: crosshair;
+        border-radius: 50%;
+        box-shadow: 0px 0px 100px #606dbc;
+      }
+
+      div {
+        text-align: center;
+        margin-top: 150px;
+      }
+
+      input {
+        font-size: 1em;
+        width: 300px;
+        height: auto;
+        padding: 20px;
+        transition: 1s;
+      }
+
+      input:focus {
+        font-size: 1.5em;
+        width: 450px;
+        height: auto;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <input type="text" placeholder="Type something here..." id="myInput" autofocus />
+    </div>
+    <div>
+      <button type="button" onclick="getValue()">Click to get the result.</button>
+    </div>
+  </body>
+</html>
